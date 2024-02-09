@@ -192,6 +192,13 @@ h3{
     width: 100%;
 }
 
+.camisa__informacion{
+    font-size: 2rem;    
+    line-height: 2;
+    text-align: center;
+}
+
+
 @media  (min-width: 768px){ 
     .camisa{
         display: grid;
@@ -199,11 +206,25 @@ h3{
         column-gap: 2rem;
     }
  }
-.formulario{
 
+ .formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
 }
-.formulario__campo{
+.formulario__submit{
+    grid-column: 1/3;
+}
 
+.formulario__campo{
+    border: 1rem solid var(--primarioOscuro);
+    background-color: transparent;
+    color: var(--blanco);
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    padding: 1rem;
+    appearance: none;
 }
 .formulario__submit{
     background-color: var(--secundario);
