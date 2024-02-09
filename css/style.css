@@ -2,7 +2,7 @@
     --primario: #9C27B0;
     --primarioOscuro: #89119D;
     --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233,287,2);
+    --secundarioOscuro: rgb(233,187,2);
     --blanco: #ffffff;
     --negro: #000000;
 
@@ -187,3 +187,34 @@ h3{
     }
 }
 
+
+.camisa__imagen{
+    width: 100%;
+}
+
+@media  (min-width: 768px){ 
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+ }
+.formulario{
+
+}
+.formulario__campo{
+
+}
+.formulario__submit{
+    background-color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    font-size: 2rem;
+    border: none;
+    transition: background-color .3s ease;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
